@@ -4,9 +4,7 @@
    <meta charset="utf-8">
    <title> Blue' world </title>
    <link rel="sytlesheet"  href="Mystyle.css">
-   <script>
 
-   </script>
    <style>
    body {
    background-image: url("bubbles.gif"), url("background.jpg");
@@ -20,18 +18,32 @@
 
 <h1>Welcome to Blue's World!</h1>
 <h2>Let's start drawing!</h2>
+<h3> Choose one</h3>
 
 <style>
   h1{
     text-align: center;
-    color: white;
+    color: black;
+    font-size: 75px;
+    font-style: oblique;
 }
 </style>
 
 <style>
   h2{
     text-align: center;
-    color: white;
+    color: black;
+    font-size: 50px;
+    font-style: oblique;
+  }
+</style>
+
+<style>
+  h3{
+    text-align: center;
+    color:black;
+    font-size:40px;
+    font-style:oblique;
   }
 </style>
 
@@ -58,21 +70,99 @@ img {
   margin-top: 8px;
   vertical-align: middle;
 }
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
 </style>
 </head>
 <body>
 
 
-  <img src="butterfly pic.jpg" style="float:right" style="align:bottom">
-  <img src="car.png"
-  style="width:230px; height:230px;"alt="car" align="bottom">
-  <img src="cat pic.jpg"
-  style="width:230px; height:230px;"  alt="cat"align="bottom">
-  <img src="hapy face.png"
-  style="width:230px; height:230px;"  alt="face" align"bottom">
-  <img src="heart.jpg"
-  style="width:230px; height:230px;" alt="heart" align="bottom">
-<img src="flower.jpg" style="width:150px; height:150px"  alt="flower"align="bottom">
 
+<div>
+<center>
+  <img src="infinity.jpeg" overlay="circle.png" style="width:230px; height: 230px" alt="flower" id="infinity">
+  <img src="diamond.jpg" overlay="circle.png" style="width:230px; height:230px;"alt="diamond" id="diamond">
+  <img src="triangle2.PNG" overlay="circle.png" style="width:230px; height:230px;"  alt="triangle"id="triangle">
+</center>
+</div>
+
+<div>
+<center>
+  <img src="circle2.jpg" overlay="circle.png" style="width:230px; height:230px;" alt="circle"id="circle">
+  <img src="heart.png" style="width:230px; height:230px;" alt="heart" id="heart">
+  <img id="square" src="square.jpg"  overlay="circle.png" style="width:230px; height:230px;" alt="square">
+
+<!--  <button id="clickme" class="btn" onclick="document.getElementById('square').style.width=500px; "><img id="square" src="square.jpg"  overlay="circle.png"   alt="square"></button>-->
+</center>
+</div>
+<div class="modal" id="myModal">
+<div class="modal-content">
+    <span class="close">&times;</span>
+    <center><img src="square.jpg" style="width:500px; height:500px;" alt="square"></center>
+</div>
+</div>
+
+
+<div class="modal" id="myModal2">
+<div class="modal-content">
+    <span id="span2" class="close">&times;</span>
+    <center><img src="diamond.jpg" style="width:500px; height:500px;" alt="diamond"></center>
+</div>
+</div>
+
+
+<div class="modal" id="myModal3">
+<div class="modal-content">
+    <span id="span3" class="close">&times;</span>
+    <center><img src="infinity.jpeg" style="width:500px; height:500px;" alt="infinity"></center>
+</div>
+</div>
+
+
+<div class="modal" id="myModal4">
+<div class="modal-content">
+    <span id="span4" class="close">&times;</span>
+    <center><img src="triangle2.png" style="width:500px; height:500px;" alt="triangle"></center>
+</div>
+</div>
+
+
+<div class="modal" id="myModal5">
+<div class="modal-content">
+    <span id="span5" class="close">&times;</span>
+    <center><img src="circle2.jpg" style="width:500px; height:500px;" alt="circle"></center>
+</div>
+</div>
+
+
+<div class="modal" id="myModal6">
+<div class="modal-content">
+    <span id="span6" class="close">&times;</span>
+    <center><img src="heart.png" style="width:500px; height:500px;" alt="heart"></center>
+</div>
+</div>
+
+ <script src="myscript.js"></script>
 </body>
 </html>
